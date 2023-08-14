@@ -1,0 +1,29 @@
+MAMEUIFX
+
+Hey Headkaze, I was able to get mameuifx with no-nag diff applied to compile in MC64. It has cheats and hi-score support built in so no need for those. 
+
+Here are the steps:
+
+Download the buildtools and both the mame and mameui 165 source in MC64
+Download the mameuifx source from here: http://mame32fx.altervista.org/download.htm
+Extract the mameuifx source over the mame0165 source in the buildtools folder allowing it to overwrite when prompted
+Download a mameuifx 0165 no nag diff patch - The only place I was able to find one was here: http://insertmorecoins.es/mameuifx-0-165-3264-bits-nonag-dinput/ Note: The no nag diff (red button) can be dl'd by itself but if you try to download the compiled mameuifx file it asks you to dl an app that installs a whole bunch of malware
+Apply the no nag patch in MC64 - I noticed 1 hunk error but it was in green and it said 'Finished' in blue after applying it
+Set Build Options in MC64 - 64bit, SubTarget:Arcade and OSD:WinUI - Not sure if subtarget:arcade is necessary as mameuifx excludes mess by default anyway
+Start Build in MC64 - build completes with no apparent errors, the only red text I see says '11794 drivers found' - took about 28 minutes
+
+After the build completes mameuifx seems to work fully with nags removed an no apparent errors though I've only tested 10 or so games. 
+
+Hopefully that helps. Thanks again for MC64!
+
+MAMEUIFX is a derivative unofficial build based on the original MAME source code with core changes such as autofire, command.dat, full widescreen stretch, different joystick id's, hiscore.dat and sync to monitor refresh.
+
+http://mame32fx.altervista.org/download.htm
+http://www.mediafire.com/download/1rzcjvn724crc79/mameuifx_0165_src.7z
+
+GroovyMAME
+
+GroovyMAME is a custom M.A.M.E. build mainly aimed at CRT monitors, as we are convinced CRT technology is a must when it comes to enjoying emulation in its full glory. However you can use GroovyMAME to alliviate some of the annoyances associated to emulation on LCD displays, specially for those models which are capable of refreshing at custom rates.
+
+http://forum.arcadecontrols.com/index.php/topic,135823.0.html
+https://54c0ab1f0b10beedc11517491db5e9770a1c66c6.googledrive.com/host/0B5iMjDor3P__aEFpcVNkVW5jbEE/v0.164_015h/0164_groovymame_015h.diff

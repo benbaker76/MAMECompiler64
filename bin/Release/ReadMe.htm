@@ -1,0 +1,255 @@
+﻿<h2>MAME Compiler 64</h2>
+by Ben Baker
+<h3>Description</h3>
+
+This is a front end to make compiling MAME/MAME64 and applying diff patches as easy as possible.
+
+Requires the .NET 2.0 Runtime.<h3>Instructions</h3>
+<p>How to compile <strong>MAME</strong> with the Hiscore patch:</p>
+
+<ol>
+	<li>Click the <strong>Downloads</strong> tab</li>
+	<li>If this is your first time running MAME Compiler put a tick next to 
+	<strong>Build Tools</strong></li>
+	<li>Put a tick next to <strong>MAME Source</strong> and the <strong>Hiscore Diff Patch</strong></li>
+	<li>Click the <strong>Download Selected</strong> button and wait for the files to finish 
+	downloading and extracting</li>
+	<li>Click the <strong>Diff Patch</strong> tab</li>
+	<li>Click the magnifying glass icon to browse and select the Hiscore diff 
+	patch (Eg. hi_163.txt)</li>
+	<li>Click the <strong>Apply Patch</strong> button to apply the Hiscore diff 
+	patch</li>
+	<li>Click the <strong>GO!</strong> button to compile</li>
+</ol>
+
+<p>To compile <strong>MAMEUI</strong>:</p>
+<ol>
+	<li>Click the <strong>Downloads</strong> tab</li>
+	<li>Put a tick next to <strong>MAMEUI Source</strong></li>
+	<li>Click the <strong>Download Selected</strong> button and wait for the file 
+	to finish downloading and extracting</li>
+	<li>Click the <strong>Build Options</strong> tab</li>
+	<li>Select <strong>WinUI</strong> from the <strong>OSD</strong> drop down 
+	list</li>
+	<li>Click the <strong>GO!</strong> button to compile</li>
+</ol>
+<p>
+
+<strong>NOTE</strong>: To compile an Arcade only build of MAME go to the <strong>
+Build Options</strong> tab and select <strong>Arcade</strong> from the <strong>Sub Target</strong> drop down list.</p>
+<h3>Older Versions of MAME</h3>
+
+For MAME versions earlier than 0143u1 you cannot use MAME Compiler v1.24 to compile MAME you must use v1.17. You can download MAME Compiler v1.17 from <a href="http://headsoft.com.au/download/MAME/MC64Setup117.exe>MC64Setup117.exe</a>
+
+<a href="http://MAMEdev.org/oldrel.html">http://MAMEdev.org/oldrel.html</a>
+
+<h3>U Release Diff Patches</h3>
+
+You can get the Official MAME diff patches for u releases from <a href="http://MAMEdev.org/updates/">http://MAMEdev.org/updates</a>
+
+<h3>Hiscore Diff Patches</h3>
+
+Newer hiscore diff's are available for download from 
+<a href="http://forum.arcadecontrols.com/index.php?topic=64298.0">http://forum.arcadecontrols.com/index.php?topic=64298.0</a><h3>Applying Patches</h3>To apply them do in this order:<br>
+1. Apply xxxu1.diff<br>
+2. Apply xxxu2.diff<br>
+3. Apply xxxu3.diff<br>
+4. Apply hi_xxxu3.diff<br>
+5. Compile<br>
+<h3>Version History</h3>
+
+<table border="0" width="100%" id="table1">
+	<tr>
+		<td class='celldate' width="100">7-5-18</td>
+		<td class='cellcontent'>
+		v2.0.197 - Updated file downloader</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">4-8-16</td>
+		<td class='cellcontent'>
+		v2.0.176 - Added support for EOL Conversion and Prefix Strip options for 
+		patching</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">3-6-16</td>
+		<td class='cellcontent'>
+		v2.0.173 - Added support for creating diff&#39;s&nbsp;</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">26-2-16</td>
+		<td class='cellcontent'>
+		v2.0.171 - Support for MAME 0171+</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">5-1-16</td>
+		<td class='cellcontent'>
+		v2.0.169 - Support for MAME 0169+&nbsp;</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">3-1-16</td>
+		<td class='cellcontent'>
+		v2.0.168 - Support for new build tools</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">31-8-15</td>
+		<td class='cellcontent'>
+		v2.0.165 - Update for MAMEUI 0165+ download &amp; extraction&nbsp;</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">24-8-15</td>
+		<td class='cellcontent'>
+		v2.0.164 - Improved downloading and extracting&nbsp;</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">27-6-15</td>
+		<td class='cellcontent'>
+		v2.0.163 - Added support for STRIP_SYMBOLS</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">1-6-15</td>
+		<td class='cellcontent'>
+		v2.0.162 - Support for &quot;arcade&quot; and &quot;mess&quot; sub targets</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">3-5-15</td>
+		<td class='cellcontent'>
+		v2.0.161 - Update for new build tools and MAME 0161+</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">31-1-15</td>
+		<td class='cellcontent'>
+		v2.0.1 - Fix for MAME 0158+</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">18-11-14</td>
+		<td class='cellcontent'>
+		v2.0 - UI Update, new options added, auto-download source and patches</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">12-11-14</td>
+		<td class='cellcontent'>
+		v1.3.2 - Fix for compiling MAME 0154+</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">01-05-14</td>
+		<td class='cellcontent'>
+		v1.3.1 - Added fix for output in MAMEUI 0153+ and FASTDEBUG option</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">27-12-12</td>
+		<td class='cellcontent'>
+		v1.3 - Many new compiler options added</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">13-12-12</td>
+		<td class='cellcontent'>
+		v1.24 - Updated for new toolchain, added Force Direct Input option</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">21-08-11</td>
+		<td class='cellcontent'>
+		v1.23 - Updated for new toolchain</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">29-05-11</td>
+		<td class='cellcontent'>
+		v1.22 - Updated for new toolchain</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">15-05-11</td>
+		<td class='cellcontent'>
+		v1.21 - MAMEUI compile no longer uses MAMEUI.mak</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">20-09-10</td>
+		<td class='cellcontent'>
+		v1.20 - Updated to latest MinGW</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">05-05-10</td>
+		<td class='cellcontent'>
+		v1.19 - Added &quot;Optimize for: None&quot; option (should solve png2bdc.exe 
+		crash issue)</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">08-02-10</td>
+		<td class='cellcontent'>
+		v1.18 - Added support for 64-bit MinGW MAME 0.136u1+</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">04-10-08</td>
+		<td class='cellcontent'>
+		v1.17 - Added &quot;Disable Warnings as Error&quot; to use when compiling 
+		127u6</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">08-07-08</td>
+		<td class='cellcontent'>
+		v1.16 - Added support for compiling MAME 0126</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">25-06-08</td>
+		<td class='cellcontent'>
+		v1.15 - Added support for compiling MAME 0105</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">01-04-08</td>
+		<td class='cellcontent'>
+		v1.14 - Added AMD64 and AthlonXP optimization options</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">01-04-08</td>
+		<td class='cellcontent'>
+		v1.13 - Added more error handling, updated patches</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">22-02-08</td>
+		<td class='cellcontent'>
+		v1.12 - Added support for compiling MAMEUI</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">14-02-08</td>
+		<td class='cellcontent'>
+		v1.11 - Added new architecture flags</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">13-02-08</td>
+		<td class='cellcontent'>
+		v1.1 - Fixed compiling for seattle.c games</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">11-02-08</td>
+		<td class='cellcontent'>
+		v1.0 - Adding support for compiling MAME64</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">05-12-07</td>
+		<td class='cellcontent'>
+		v0.5 - Fixed compiling for 0.116</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">21-10-07</td>
+		<td class='cellcontent'>
+		v0.4 - Fixed make error for 0.120+</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">07-10-07</td>
+		<td class='cellcontent'>
+		v0.3 - Fixed compiling for &lt; 0.118u5</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">01-10-07</td>
+		<td class='cellcontent'>
+		v0.2 - Added color coded output, timers and MKChamp's current 
+diff releases.</td>
+	</tr>
+	<tr>
+		<td class='celldate' width="100">30-09-07</td>
+		<td class='cellcontent'>
+		v0.1 - First Release</td>
+	</tr>
+	</table>
+
+<h3>Thanks</h3>
+
+Thanks to MKChamp for the hiscore diff's.<br>

@@ -1,0 +1,6 @@
+.vs
+obj
+*.pdb
+*.manifest
+*.cache
+*.vshost.*
