@@ -15,6 +15,8 @@ WizardSmallImageFile=WizardSmallImage.bmp
 
 [Files]
 Source: "MAMECompiler64.exe"; DestDir: "{app}"; CopyMode: alwaysoverwrite
+Source: "MAMECompiler64.dll"; DestDir: "{app}"; CopyMode: alwaysoverwrite
+Source: "MAMECompiler64.deps.json"; DestDir: "{app}"; CopyMode: alwaysoverwrite
 Source: "make.exe"; DestDir: "{app}"; CopyMode: alwaysoverwrite
 Source: "patch.exe"; DestDir: "{app}"; CopyMode: alwaysoverwrite
 Source: "diff.exe"; DestDir: "{app}"; CopyMode: alwaysoverwrite
@@ -26,6 +28,8 @@ Source: "ReadMe.htm"; DestDir: "{app}"; CopyMode: alwaysoverwrite
 
 [UninstallDelete]
 Type: files; Name: "{app}\MAMECompiler64.exe"
+Type: files; Name: "{app}\MAMECompiler64.dll"
+Type: files; Name: "{app}\MAMECompiler64.deps.json"
 Type: files; Name: "{app}\MAMECompiler64.ini"
 Type: files; Name: "{app}\make.exe"
 Type: files; Name: "{app}\patch.exe"
