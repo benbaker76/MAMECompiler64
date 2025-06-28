@@ -13,6 +13,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Collections.Specialized;
+using System.Reflection;
 
 namespace MAMECompiler64
 {
@@ -22,7 +23,7 @@ namespace MAMECompiler64
 		private Process m_patchProcess = null;
 		private Process m_diffProcess = null;
 		private Stopwatch m_stopWatch = null;
-		private Timer m_compileTimer = null;
+		private System.Windows.Forms.Timer m_compileTimer = null;
 		private ToolTip m_toolTip = null;
 
 		private string[] PrefixStripValues =
@@ -1232,7 +1233,9 @@ namespace MAMECompiler64
 		{
 			try
 			{
-				this.Text = this.Text.Replace("[VERSION]", Globals.Version);
+                var version = Assembly.GetExecutingAssembly().GetName().Version;
+
+                this.Text = this.Text.Replace("[VERSION]", version.ToString(3));
 
 				m_stopWatch = new Stopwatch();
 
@@ -1950,7 +1953,7 @@ namespace MAMECompiler64
 				m_stopWatch.Reset();
 				m_stopWatch.Start();
 
-				m_compileTimer = new Timer();
+				m_compileTimer = new System.Windows.Forms.Timer();
 				m_compileTimer.Interval = 1000;
 				m_compileTimer.Tick += new EventHandler(timer_Tick);
 				m_compileTimer.Start();
@@ -2201,7 +2204,9 @@ namespace MAMECompiler64
 
 					if (mc64Version != null)
 					{
-						if (!mc64Version.Equals(Globals.Version))
+                        var version = Assembly.GetExecutingAssembly().GetName().Version;
+
+                        if (!mc64Version.Equals(version.ToString(3)))
 						{
 							if (MessageBox.Show(this, "Do you want to update MAME Compiler 64?", "Update MC64", MessageBoxButtons.YesNo) == DialogResult.Yes)
 								UpdateMC64();

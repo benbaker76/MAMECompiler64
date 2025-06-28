@@ -9,12 +9,12 @@ namespace MAMECompiler64
 {
     public class Globals
     {
-        public static string Version = "v2.0.197";
 		public static int MaxDownloads = 10;
 
 		public static string GetTempFolder()
 		{
 			string assemblyName = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
+
 			return Path.Combine(System.IO.Path.GetTempPath(), assemblyName);
 		}
 

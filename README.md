@@ -8,15 +8,15 @@ Requires the .NET 2.0 Runtime
 
 ## Screenshots
 
-![](/images/mc01.png)
+![](/.github/img/MAMECompiler01.png)
 
-![](/images/mc02.png)
+![](/.github/img/MAMECompiler02.png)
 
-![](/images/mc03.png)
+![](/.github/img/MAMECompiler03.png)
 
-![](/images/mc04.png)
+![](/.github/img/MAMECompiler04.png)
 
-![](/images/mc05.png)
+![](/.github/img/MAMECompiler05.png)
 
 ## Instructions
 
