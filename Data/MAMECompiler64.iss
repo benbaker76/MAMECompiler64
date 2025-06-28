@@ -2,14 +2,14 @@
 
 [Setup]
 AppName=MAME Compiler 64
-AppVerName=MAME Compiler 64 v2.0.197
-DefaultDirName={pf}\MAME Compiler 64
+AppVerName=MAME Compiler 64 {#AppVersion}
+DefaultDirName={autopf}\MAME Compiler 64
 DefaultGroupName=MAME Compiler 64
 UninstallDisplayIcon={app}\MAMECompiler64.exe
 Compression=lzma
 SolidCompression=yes
 OutputDir=Setup
-OutputBaseFilename=MC64Setup
+OutputBaseFilename=MAMECompiler64Setup
 WizardImageFile=WizardImage.bmp
 WizardSmallImageFile=WizardSmallImage.bmp
 
